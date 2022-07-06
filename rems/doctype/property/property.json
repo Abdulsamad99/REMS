@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "autoname": "field:name1",
+ "creation": "2022-07-05 16:37:23.243064",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "property_type",
+  "column_break_3",
+  "owner",
+  "property_description_section",
+  "building",
+  "city",
+  "facing",
+  "status",
+  "column_break_8",
+  "location",
+  "unit_specifications_section",
+  "unit_type",
+  "covered_area",
+  "kitchen",
+  "column_break_12",
+  "floor",
+  "bedrooms",
+  "halls",
+  "more_information_section",
+  "unit_assets",
+  "column_break_22",
+  "amenity_name",
+  "property_meters_section",
+  "property_meters_reading"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "property_type",
+   "fieldtype": "Select",
+   "label": "Property Type",
+   "options": "\nResidential\nCommercial"
+  },
+  {
+   "fieldname": "owner",
+   "fieldtype": "Data",
+   "label": "Owner"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "property_description_section",
+   "fieldtype": "Section Break",
+   "label": "Property Description"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location",
+   "width": "50px"
+  },
+  {
+   "fieldname": "building",
+   "fieldtype": "Link",
+   "label": "Building",
+   "options": "Building"
+  },
+  {
+   "fieldname": "unit_specifications_section",
+   "fieldtype": "Section Break",
+   "label": "Unit Specifications"
+  },
+  {
+   "fieldname": "unit_type",
+   "fieldtype": "Link",
+   "label": "Unit Type",
+   "options": "Unit Type"
+  },
+  {
+   "fieldname": "floor",
+   "fieldtype": "Data",
+   "label": "Floor"
+  },
+  {
+   "fieldname": "covered_area",
+   "fieldtype": "Data",
+   "label": "Covered Area"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bedrooms",
+   "fieldtype": "Int",
+   "label": "Bedrooms"
+  },
+  {
+   "fieldname": "kitchen",
+   "fieldtype": "Int",
+   "label": "Kitchen"
+  },
+  {
+   "fieldname": "halls",
+   "fieldtype": "Int",
+   "label": "Halls"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "unit_assets",
+   "fieldtype": "Table",
+   "label": "Unit Assets",
+   "options": "Unit Assets"
+  },
+  {
+   "fieldname": "property_meters_section",
+   "fieldtype": "Section Break",
+   "label": "Property Meters"
+  },
+  {
+   "fieldname": "property_meters_reading",
+   "fieldtype": "Table",
+   "label": "Property Meters Reading",
+   "options": "Property Meters"
+  },
+  {
+   "fieldname": "facing",
+   "fieldtype": "Data",
+   "label": "Facing"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Available\nBooked\nSold\nOn Lease"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amenity_name",
+   "fieldtype": "Table",
+   "label": "Amenity Name",
+   "options": "Amenity"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-05 18:05:37.115581",
+ "modified_by": "Administrator",
+ "module": "REMS",
+ "name": "Property",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
